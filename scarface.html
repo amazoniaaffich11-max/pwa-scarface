@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidéo Formation 1</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;">
+  <video controls autoplay style="max-width:100%; max-height:100%;">
+    <source src="https://www.youtube.com/watch?v=PRsfEga87ck&list=RDPRsfEga87ck&start_radio=1" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker enregistré'));
+    }
+  </script>
+</body>
+</html>
