@@ -7,10 +7,12 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;">
-  <video controls autoplay style="max-width:100%; max-height:100%;">
-    <source src="https://www.youtube.com/watch?v=PRsfEga87ck&list=RDPRsfEga87ck&start_radio=1" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo.
-  </video>
+  <iframe width="100%" height="100%" 
+          src="https://youtube.com/shorts/n4-BOCSob_Q" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
